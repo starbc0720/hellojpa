@@ -19,6 +19,7 @@ public class JpaMain {
            Member findMember = em.find(Member.class, 1L);
            findMember.setName("HelloJPA");
 
+            //commit test
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
